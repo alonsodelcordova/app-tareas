@@ -11,9 +11,11 @@ export default function App() {
    return (
       <BrowserRouter>
          <Switch>
-            <Route path="/tareas" component={Tareas} />
-            <Route path="/inicio" component={Inicio} />
-            <Route path="/usuarios" component={Usuarios} />
+            <Route path="/app-tareas/tareas" component={Tareas} />
+           
+            <Route path="/app-tareas/usuarios" component={Usuarios} />
+            <Route path="/app-tareas/inicio" component={Inicio} />
+            <Route path="/app-tareas" component={Login} />
             <Route path="/" component={Login} />
          </Switch>
       </BrowserRouter>

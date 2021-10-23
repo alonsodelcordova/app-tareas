@@ -13,7 +13,7 @@ function Login(props:any) {
             console.log(res)
             let userToken:TokenUser = res.data
             sessionStorage.setItem('user_token', JSON.stringify(userToken))
-            props.history.push('/inicio')
+            props.history.push('/app-tareas/inicio')
          }
       )
       .catch(error=>{

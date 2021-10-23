@@ -17,7 +17,7 @@ export default function Tareas() {
    }
 
    const save = async (data: Tarea) => {
-      if (data.id != 0) {
+      if (data.id !== 0) {
          /**update */
          await edit_tarea(data).then(
             res => {
@@ -56,8 +56,8 @@ export default function Tareas() {
    }
 
    useEffect(() => {
-      getTareas()
-   }, [])
+     
+   }, []);
 
    return (
       <div>
